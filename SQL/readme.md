@@ -12,10 +12,10 @@
   
 ## **Trace**    
 ### 记录SqlServer的DeadLock状况
-- **[GetTrace](.\Trace\GetTrace.sql)**  
+- **[GetTrace](./Trace/GetTrace.sql)**  
   - ::fn_trace_getinfo(traceId)
     取得当前的Trace情报 traceId=0时，返回所有的Trace情报    
-- **[StartTrace](.\Trace\StartTrace.sql)**
+- **[StartTrace](./Trace/StartTrace.sql)**
   - sp_trace_create    
     创建一个跟踪定义    
     创建后返回一个traceId，记住这个ID，启动停止时需要用到　　　　
@@ -35,5 +35,5 @@
       - 1 : start
       - 2 : stop         
   
-- **[StopTrace](.\Trace\StopTrace.sql)**
+- **[StopTrace](./Trace/StopTrace.sql)**
     停止一个追踪进程    
